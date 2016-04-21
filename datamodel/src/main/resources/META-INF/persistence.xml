@@ -19,7 +19,7 @@
  -->
 <persistence xmlns="http://java.sun.com/xml/ns/persistence"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.0"
-	xsi:schemaLocation="http://java.sun.com/xml/ns/persistence 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/persistence
 	http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
 	<persistence-unit name="cxfjpa" transaction-type="JTA">
 		<provider>org.apache.openjpa.persistence.PersistenceProviderImpl</provider>
@@ -36,7 +36,7 @@
 			<property name="openjpa.jdbc.SynchronizeMappings" value="buildSchema(SchemaAction='add,deleteTableContents')" />
 			<property name="openjpa.jdbc.MappingDefaults" value="ForeignKeyDeleteAction=restrict,JoinForeignKeyDeleteAction=restrict"/>
 			<property name="openjpa.Multithreaded" value="false"/>
-			<property name="openjpa.InitializeEagerly" value="true"/>
+			<!--property name="openjpa.InitializeEagerly" value="true"/-->
 			<property name="openjpa.DynamicEnhancementAgent" value="false" />
 			<property name="openjpa.RuntimeUnenhancedClasses" value="unsupported" />
 			<property name="openjpa.jdbc.SchemaFactory" value="native(foreignKeys=true)" />
